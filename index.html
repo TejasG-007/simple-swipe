@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -26,9 +25,9 @@
     <body>
         <div id="swipeBox">
             <p>Swipe the page with one finger to change the background color</p>
-            <p>LEFT = ORANGE</p>
-            <p>RIGHT = GREEN</p>
-            <p>UP = MAROON</p>
+            <p>LEFT = RED</p>
+            <p>RIGHT = ORANGE</p>
+            <p>UP = YELLOW</p>
             <p>DOWN = PURPLE</p>
         </div>
 
@@ -37,19 +36,19 @@
                 undefined,
                 function (swipe, el) {
                     // Minimum swipe length
-                    if (swipe.length < 72) {
+                    if (swipe.length < 70) {
                         return;
                     }
 
                     switch(swipe.direction) {
                         case 'left':
-                            el.style.backgroundColor = 'orange';
+                            el.style.backgroundColor = 'red';
                             break;
                         case 'right':
-                            el.style.backgroundColor = 'green';
+                            el.style.backgroundColor = 'orange';
                             break;
                         case 'up':
-                            el.style.backgroundColor = 'maroon';
+                            el.style.backgroundColor = 'yellow';
                             break;
                         case 'down':
                             el.style.backgroundColor = 'purple';
